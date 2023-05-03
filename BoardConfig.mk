@@ -61,6 +61,9 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/nothing:libudfps_extension.nothing
 TARGET_USES_FOD_ZPOS := true
 
+# GPS
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/device_framework_matrix.xml \
