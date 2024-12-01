@@ -192,6 +192,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     gralloc.default \
+    init.qti.display_boot.rc \
+    init.qti.display_boot.sh \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.memtrack-service
@@ -218,21 +220,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
-# Init scripts
+# Init
 PRODUCT_PACKAGES += \
     fstab.default \
     fstab.default.vendor_ramdisk \
     init.class_main.sh \
     init.kernel.post_boot.sh \
     init.qcom.rc \
+    init.qcom.recovery.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    init.qti.display_boot.rc \
-    init.qti.display_boot.sh \
     init.qti.kernel.rc \
     init.qti.kernel.sh \
-    init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
 
