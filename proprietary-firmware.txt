@@ -1,21 +1,20 @@
-## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Nothing Phone (1) (3.0).
+# All firmware images below are extracted from the release mentioned in proprietary-files.txt
 
-abl.img;AB
-aop.img;AB
-bluetooth.img;AB
-cpucp.img;AB
-devcfg.img;AB
-dsp.img;AB
-featenabler.img;AB
-hyp.img;AB
-imagefv.img;AB
-keymaster.img;AB
-modem.img;AB
-multiimgoem.img;AB
-qupfw.img;AB
-shrm.img;AB
-tz.img;AB
-uefisecapp.img;AB
-xbl.img;AB
-xbl_config.img;AB
+abl.elf:abl.img;AB
+aop.mbn:aop.img;AB
+BTFM.bin:bluetooth.img;AB
+cpucp.elf:cpucp.img;AB
+devcfg.mbn:devcfg.img;AB
+dspso.bin:dsp.img;AB
+featenabler.mbn:featenabler.img;AB
+hypvm.mbn:hyp.img;AB
+imagefv.elf:imagefv.img;AB
+km41.mbn:keymaster.img;AB
+NON-HLOS.bin:modem.img;AB
+multi_image.mbn:multiimgoem.img;AB
+qupv3fw.elf:qupfw.img;AB
+shrm.elf:shrm.img;AB
+tz.mbn:tz.img;AB
+uefi_sec.mbn:uefisecapp.img;AB
+xbl.elf:xbl.img;AB
+xbl_config.elf:xbl_config.img;AB
