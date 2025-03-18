@@ -14,6 +14,10 @@ $(call inherit-product, device/nothing/Spacewar/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_Spacewar
 PRODUCT_DEVICE := Spacewar
@@ -26,5 +30,5 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DeviceProduct=Spacewar \
-    BuildFingerprint="Nothing/Spacewar/Spacewar:15/AQ3A.240929.001/2503031817:user/release-keys"
+    BuildFingerprint=Nothing/Spacewar/Spacewar:15/AQ3A.240929.001/2503031817:user/release-keys \
+    DeviceProduct=Spacewar
