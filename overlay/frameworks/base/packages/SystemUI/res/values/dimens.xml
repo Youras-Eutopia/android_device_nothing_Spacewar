@@ -4,9 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">0dp</dimen>
-
     <!-- Default device corner radius, used for assist UI -->
     <dimen name="config_rounded_mask_size">107px</dimen>
     <dimen name="config_rounded_mask_size_top">107px</dimen>
