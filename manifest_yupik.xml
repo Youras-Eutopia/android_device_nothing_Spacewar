@@ -3,7 +3,7 @@
      SPDX-FileCopyrightText: 2022 The Linux Foundation
      SPDX-License-Identifier: BSD-3-Clause
 -->
-<manifest version="1.0" type="device" target-level="5">
+<manifest version="2.0" type="device" target-level="5">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -23,6 +23,12 @@
         <name>android.hardware.camera.provider</name>
         <transport>hwbinder</transport>
         <fqname>@2.4::ICameraProvider/legacy/0</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.drm</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.3::ICryptoFactory/wfdhdcp</fqname>
+        <fqname>@1.3::IDrmFactory/wfdhdcp</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
@@ -190,8 +196,8 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.lpa</name>
         <transport>hwbinder</transport>
-        <fqname>@1.2::IUimLpa/UimLpa0</fqname>
-        <fqname>@1.2::IUimLpa/UimLpa1</fqname>
+        <fqname>@1.1::IUimLpa/UimLpa0</fqname>
+        <fqname>@1.1::IUimLpa/UimLpa1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qcrilhook</name>
@@ -208,8 +214,8 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
-        <fqname>@2.6::IQtiRadio/slot1</fqname>
-        <fqname>@2.6::IQtiRadio/slot2</fqname>
+        <fqname>@2.7::IQtiRadio/slot1</fqname>
+        <fqname>@2.7::IQtiRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim</name>
