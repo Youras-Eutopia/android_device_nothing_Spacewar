@@ -19,18 +19,20 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'vendor/nothing/Spacewar',
+    'device/nothing/Spacewar',
+    'hardware/nothing',
     'hardware/qcom-caf/sm8350',
     'hardware/qcom-caf/wlan',
-    'hardware/nothing',
-    'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/display',
 ]
 
+
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
+
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
