@@ -97,10 +97,10 @@ TARGET_USES_FOD_ZPOS := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest_yupik.xml
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -131,11 +131,11 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
@@ -143,7 +143,7 @@ BOARD_USES_QCOM_HARDWARE := true
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.default
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
